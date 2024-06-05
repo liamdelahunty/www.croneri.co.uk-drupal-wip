@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Generate AD Article Block!</title>
+
+    <style>
+        li {padding-bottom: 0.3rem;}
+    </style>
+</head>
+<body>
+
+    <main role="main" class="container">
+
+        <div class="row">
+            <div class="col">
+
+                <div id="error-container" class="alert alert-danger alert-dismissible fade hide" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <h1>Generate Accountancy Daily Snippet!</h1>
+                <p>[
+                    <a href="https://www.accountancydaily.co/" target="ad">accountancydaily.co</a> | 
+                    <a href="https://www.croneri.co.uk/" target="ci">croneri.co.uk</a> | 
+                    <a href="generate-snippet.html"><b>Generate Snippet</b></a> |
+                    <a href="generate-home.html" target="gm">Generate Home</a> |
+                    <a href="generate-images.html" target="gi">Extract Images</a> 
+                    ]
+                </p>
+
+                <form action="javascript:takeMeHome();">
+
+                    <div class="form-group">
+                        <label for="articleTitleInput">Article Title</label>
+                        <input id="articleTitleInput" class="form-control" type="text" placeholder="Article Title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="articleImageInput">Image</label>
+                        <input id="articleImageInput" class="form-control" type="text" placeholder="Image" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="snippetInput">Text</label>
+                        <textarea id="snippetInput" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="articleLinkInput">Link</label>
+                        <input id="articleLinkInput" class="form-control" type="text" placeholder="Link" >
+                    </div>
+                    <button class="btn btn-lg btn-success" id="eventBtn" onclick="takeMeHome();" type="button">Where my homies at?</button>
+
+                </form>
+            </div>
+            <div class="col invisible" id="output1">
+                <div class="row mb-5">
+                    <div id="output-container"></div>
+                </div>
+                <div class="row">
+                    <h2>Output:</h2>
+                    <textarea id="results-container" class="form-control" rows="15"></textarea>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </main><!-- /.container -->
+
+
+    <script>
+        function takeMeHome(){
+
+            console.clear();
+
+            let articleTitle       = document.getElementById("articleTitleInput");
+            let articleTitleParse  = articleTitle.value.trim();
+
+            let articleImage      = document.getElementById("articleImageInput"); 
+            let articleImageParse = articleImage.value.trim();
+
+            let articleLink       = document.getElementById("articleLinkInput");
+            let articleLinkParse  = articleLink.value.trim();
+
+            let snippet       = document.getElementById("snippetInput");
+            let snippetParse  = snippet.value.trim();
+
+            const resultscontainer  = document.getElementById("results-container");
+            const errorcontainer    = document.getElementById("error-container");
+            const outputcontainer   = document.getElementById("output-container");
+            const output1container   = document.getElementById("output1");
+            output1container.classList.remove("invisible");
+            
+        // resubmit.
+            resultscontainer.innerHTML = "";
+
+            if (!articleTitleParse) {
+                if (document.getElementById("errorMsg") === null){
+                    var errorMsg = document.createElement("p");
+                }
+                errorMsg.textContent = "No Title";
+                errorMsg.className = "text-danger";
+                errorcontainer.classList.remove("hide");
+                errorcontainer.classList.add("show");
+                errorcontainer.classList.add("alert-danger");
+                errorcontainer.appendChild(errorMsg);
+            }
+
+            if (!articleImageParse) {
+                if (document.getElementById("errorMsg") === null){
+                    var errorMsg = document.createElement("p");
+                }
+                errorMsg.textContent = "No Image";
+                errorMsg.className = "text-danger";
+                errorcontainer.classList.remove("hide");
+                errorcontainer.classList.add("show");
+                errorcontainer.classList.add("alert-danger");
+                errorcontainer.appendChild(errorMsg);
+            }
+
+            if (!snippetParse) {
+                if (document.getElementById("errorMsg") === null){
+                    var errorMsg = document.createElement("p");
+                }
+                errorMsg.textContent = "No Text";
+                errorMsg.className = "text-danger";
+                errorcontainer.classList.remove("hide");
+                errorcontainer.classList.add("show");
+                errorcontainer.classList.add("alert-danger");
+                errorcontainer.appendChild(errorMsg);
+            }
+
+            if (!articleLinkParse) {
+                if (document.getElementById("errorMsg") === null){
+                    var errorMsg = document.createElement("p");
+                }
+                errorMsg.textContent = "No Link";
+                errorMsg.className = "text-danger";
+                errorcontainer.classList.remove("hide");
+                errorcontainer.classList.add("show");
+                errorcontainer.classList.add("alert-danger");
+                errorcontainer.appendChild(errorMsg);
+            }
+
+            output02 = '<div class="row mb-3 mb-lg-5">';
+            output04 = '<div class="col-2 d-none d-lg-block"><a href="'+articleLinkParse+'" target="_blank"><img src="'+articleImageParse+'" class="img-fluid"></a></div>';
+            output06 = '<div class="col" style="text-align: left !important;">';
+            output08 = '<h4><a href="'+articleLinkParse+'" target="_blank">'+articleTitleParse+'</a></h4>';
+            output10 = '<p class="resettxt">'+snippet.value+'</p>';
+            output12 = '</div>';
+            output14 = '</div>';
+
+            resultscontainer.innerHTML  = output02 + "\n\t" + output04 + "\n\t" + output06 + "\n\t\t" + output08 + "\n\t\t" + output10 + "\n\t" + output12 + "\n" + output14 + "\n";
+            outputcontainer.innerHTML   = output02 + "\n\t" + output04 + "\n\t" + output06 + "\n\t\t" + output08 + "\n\t\t" + output10 + "\n\t" + output12 + "\n" + output14 + "\n";
+
+        }
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

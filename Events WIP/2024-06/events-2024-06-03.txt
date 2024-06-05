@@ -1,0 +1,153 @@
+/* 
+// Image renames
+
+mv 'Mythbusting TUPE (1).png' 2024-06-03-demystifying-tupe-and-the-changes-to-come.png
+mv 'Charities.png' 2024-06-04-helping-charity-finance-professionals-navigate-the-perfect-storm.png
+mv 'Martin Jackson- Reporting expense and benefits (1).jpg' 2024-06-11-reporting-expenses-and-benefits.jpg
+mv '3356 - Right to work.png' 2024-06-17-hr-essentials-right-to-work-checks.png
+mv 'Annual share scheme reporting and EMi schemes 2.jpg' 2024-06-18-annual-share-scheme-reporting-and-emi-schemes.jpg
+mv 'Navigate care (1).png' 2024-06-19-navigate-care-for-new-managers-and-providers.png
+mv 'Navigating R&D for SME's .png' 2024-06-25-navigating-hmrc-r-d-enquiries-for-smes.png
+mv 'Input tax- what it is and when can it be claimed  (1).jpg' 2024-06-26-input-tax-what-it-is-and-when-it-can-be-claimed.jpg
+
+*/
+
+
+
+/**/
+
+Input Tax - what it is and when it can be claimed
+
+Input tax- what it is and when can it be claimed  (1).jpg
+
+June 26, 2024 14:00
+
+Sarah Kay Input Tax Accountex talk.
+
+When VAT returns are completed the question of whether or not VAT incurred on a particular expense can be recovered frequently arises.
+When this happens the first point to resolve is whether not the VAT is input tax in the first place. The first part of this presentation will explore how input tax is defined for VAT purposes as, if VAT is not input tax, it cannot be claimed. In the second part of the presentation we will address the conditions which input tax must meet in order for it to be claimed.
+
+https://pages.croneri.co.uk/WEB-26-06-2024_3363_1-Registration.html?utm_campaign=3363&utm_medium=website&utm_source=direct&utm_content=LP
+
+
+----
+/*
+|--------------------------------------------------------------------------
+| DONE 
+|--------------------------------------------------------------------------
+*/
+
+
+Demystifying TUPE and the changes to come
+Mythbusting TUPE (1).png
+
+June 3, 2024 11:00
+
+In this webinar, we will break down the process of a TUPE transfer and set out your obligations, each step of the way, empowering you to navigate through this notoriously difficult piece of HR law. 
+
+https://pages.croneri.co.uk/HRI-WEB-2024-03-06_3298_1-Registration-Page.html?utm_campaign=3298&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+Helping charity finance professionals navigate the perfect storm
+
+Charities.png
+
+June 4, 2024 14:00
+
+The charity sector faces a perfect storm of rising demand for services, increasing costs and complexity and uncertainty over funding
+Whether you’re working in the charity sector as a tax or accounting professional or as an auditor or examiner, we have a range of tax, accounting and audit resources and the sector specific expertise and experience to support you.
+
+https://pages.croneri.co.uk/WEB-04-06-2024_3354_1-Registration.html?utm_campaign=3254&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+Reporting expenses and benefits
+
+Martin Jackson- Reporting expense and benefits (1).jpg
+
+June 11 2024 14:00
+
+P11D reporting 
+-Basic principles 
+-Class 1/Class 1A NICs 
+-Specific issues and particular benefits (pool cars, trivial benefits, entertainment, pecuniary --liabilities etc) 
+Payrolled benefits reporting 
+-Annual returns 
+-Class 1A NICs 
+-Future plans for mandatory payrolling 
+PAYE Settlement Agreements 
+-Grossing up calculations 
+-Class 1B NICs 
+
+https://pages.croneri.co.uk/WEB-11-06-2024_3366_1-Registration.html?utm_campaign=3366&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+HR Essentials: Right to work checks
+
+3356 - Right to work.png
+
+17 June, 2024 11:00
+
+In this webinar we will take you through what you need to know about right to work checks, the latest updates, and what the risks are should they not be carried out correctly. 
+
+After watching this webinar, you will:
+Learn the different kinds of checks that can be conducted, and to whom they apply o
+Understand how these rules should be applied in your business
+Be aware of the risks of failing to carry out compliant right to work checks
+
+https://pages.croneri.co.uk/HRI-WEB-2024-17-06_3356_1-Registration-Page.html?utm_campaign=3356&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+Annual share scheme reporting and EMI schemes
+
+Annual share scheme reporting and EMi schemes 2.jpg
+
+June 18, 2024 14:00
+
+Now that the share scheme reporting season is in full flow, Croner-i Senior Technical Writer Diane Wright gives a run-through of the reporting requirements and issues that might affect your clients.
+
+https://pages.croneri.co.uk/WEB-18-06-2024_3355_1-Registration.html?utm_campaign=3355&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+Navigate Care for New Managers and Providers
+
+Navigate care (1).png
+
+June 19, 2024 13:00
+
+In this webinar we will show how new providers and registered managers of CQC-registered social care services can get the most out of Navigate-Care.
+We will discuss the responsibilities of the registered manager and provider and the in-depth topics, learning resources and tools available to support them in each aspect of their role, from day-to-day service management to getting the best out of your next inspection.
+
+https://pages.croneri.co.uk/WEB-19-06-2024_3370_1.Registration2024.html?utm_campaign=3370&utm_medium=website&utm_source=direct&utm_content=LP
+
+
+/**/
+
+Mastering food safety management
+
+Mastering food safety management.jpg
+
+June 19, 2024 11:00
+
+
+Everyone who works with food has a responsibility to protect the health and wellbeing of consumers and end-users by safeguarding that food from anything that could cause harm. Food safety covers good hygiene practices for handling food, including personal hygiene, cleaning and disinfection, preventing cross-contamination, temperature control and dealing with allergies.
+
+
+https://pages.croneri.co.uk/WEB-19-06-2024_3367_1.Registration2024.html?utm_campaign=3367&utm_medium=website&utm_source=direct&utm_content=LP
+
+/**/
+
+Navigating HMRC R&D enquiries for SMEs
+
+Navigating R&D for SME's .png
+
+June 25, 2024 14:00
+
+This webinar will cover the current HMRC enquiry process focusing on ‘volume compliance’ approach- process, pitfalls, workarounds and penalties (SME Scheme) and Research and Development ( R&D ) tax relief which supports companies that work on innovative projects in science and technology. You may be able to claim Corporation Tax relief if your project meets the definition of R&D for tax purposes.
+
+
+https://pages.croner.co.uk/WEB-25-06-2024_3361_1-Registration.html?utm_campaign=3361&utm_medium=website&utm_source=direct&utm_content=LP

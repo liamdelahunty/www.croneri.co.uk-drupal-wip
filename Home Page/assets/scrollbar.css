@@ -1,0 +1,15 @@
+<style>
+::-webkit-scrollbar {
+    all:unset;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0D283;
+  border: none;
+  }
+::-webkit-scrollbar-thumb:hover {
+  background: #cabd76;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d1bc46;
+}
+</style>

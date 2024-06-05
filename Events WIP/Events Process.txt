@@ -1,0 +1,117 @@
+/*
+// Make it easy
+*/
+
+Image: Extra points if it follows the web naming conventions, and has been resized and compressed.
+
+Event name: Sentence case
+
+Date: YYYY-MM-DD HH:MM or DD/MM/YYYY HH:MM
+
+Link: to the landing page.
+
+Text: As you want it on the page (no need for prefix such as "Synopsis" unless you want that to display on the 'card').
+
+/*
+// Publish process
+*/
+
+
+1. Rename the images to be yyyy-mm-dd-webinar-name.jpg|png.
+
+Follow the SEO naming conventions - all lowercase, words separated  by hyphens, no spaces.
+
+(https://peninsulagrouponline-my.sharepoint.com/:x:/r/personal/liam_delahunty_croneri_co_uk/_layouts/15/Doc.aspx?sourcedoc=%7B5AF316E5-E8B8-430F-BAB8-5A35DD6C61D3%7D&file=utilities.xlsx&action=default&mobileredirect=true)
+
+2. Resize the images to be 472 x.
+
+3. TinyPng the images to reduce file weight.
+
+4. Upload images via "Events Image Upload Placeholder YEAR MONTH" eg. https://www.croneri.co.uk/node/164
+
+5. Change the title to be sentece case if necessary
+
+6. Code Event card: (Bootstrap CSS 4.6)
+* Link Image
+* Link title
+* Text
+* Date
+* Link button
+
+7. Order in reverse date order on the page.
+
+8. Rename the link for any past event to "On Demand"
+
+9. At end of month create an archive for that month's events.
+
+10. Update the sitemap
+
+/*
+|--------------------------------------------------------------------------
+| Notes
+|------------------------------------------------------------------------*/
+ 
+
+<script>
+	function compareDates(inputDate){
+		var comparisonDate = new Date(inputDate);
+		var currentDate = new Date();
+		if (currentDate > comparisonDate) {
+			document.writeln("Watch on demand");
+		} else if (currentDate < comparisonDate) {
+			document.writeln("Join webinar");
+		}
+	}
+</script>
+
+
+/*
+|--------------------------------------------------------------------------
+| Add the generated content within the following HTML
+|--------------------------------------------------------------------------
+*/
+
+<div class="row px-5 mt-3 pt-5"><div class="col"><h2 class="h3">Upcoming and recent webinars:</h2></div></div>
+<div class="row px-5 pb-5">
+	<!-- Put content in reverse order -->
+
+	<!-- End -->
+</div>
+
+
+ Card lists are:
+ <ul class="card-text">
+	<li class="ul-item">
+</ul>
+
+
+/*
+|--------------------------------------------------------------------------
+| Keep this CSS is the secondary freetype area
+|------------------------------------------------------------------------
+*/
+
+<style>
+	::-webkit-scrollbar {
+		all:unset;
+	}
+	::-webkit-scrollbar-thumb {
+		background: #E0D283;
+		border: none;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: #cabd76;
+	}
+	::-webkit-scrollbar-thumb:active {
+		background: #d1bc46;
+	}
+	.ul-item::before {
+		content: "●";
+  		margin-left: 1rem;
+  		margin-right: 1rem;
+	}
+	.ul-item:last-of-type {
+  		margin-bottom: 1rem;
+
+	}
+</style>

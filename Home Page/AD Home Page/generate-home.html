@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Generate Croner-i AD Home Code!</title>
+
+    <style>
+        li {padding-bottom: 0.3rem;}
+    </style>
+</head>
+<body>
+
+    <main role="main" class="container">
+
+        <div class="row">
+            <div class="col">
+
+                <div id="error-container" class="alert alert-danger alert-dismissible fade hide" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                
+                <h1>Generate AD Home Hero</h1>
+
+                <p>[
+                    <a href="https://www.accountancydaily.co/" target="ad">accountancydaily.co</a> | 
+                    <a href="https://www.croneri.co.uk/" target="ci">croneri.co.uk</a> | 
+                    <a href="generate-snippet.html" target="gs">Generate Snippet</a> |
+                    <a href="generate-home.html"><b>Generate Home</b></a> |
+                    <a href="generate-images.html" target="gi">Extract Images</a> 
+                    ]
+                </p>                
+
+                <form action="javascript:takeMeHome();">
+
+                    <div class="form-group">
+                        <label for="articleOneInput">Article One</label>
+                        <textarea id="articleOneInput" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="articleTwoInput">Article Two</label>
+                        <textarea id="articleTwoInput" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="articleThreeInput">Article Three</label>
+                        <textarea id="articleThreeInput" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="articleFourInput">Article Four</label>
+                        <textarea id="articleFourInput" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <button class="btn btn-lg btn-success" id="eventBtn" onclick="takeMeHome();" type="button">Look on my Works, ye Mighty, and despair!</button>
+
+                </form>
+            </div>
+            <div class="col-6 d-none" id="output-container">
+                <div class="row">
+                    <h2>Output:</h2>
+                    <textarea id="results-container" class="form-control" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="col-6" id="ian-dury">
+                <div class="row pl-5 pt-5">
+
+                    Noel Coward was a charmer.<br>
+                    As a writer he was brahma.<br>
+                    Velvet, jackets and pyjamas,<br>
+                    had a gay divorce and other dramas.<br><br>
+
+
+                    Van Gough did some eyeball pleasers.<br>
+                    He must have been a pencil squeezer.<br>
+                    He didn't do the Mona Lisa,<br>
+                    That was an Italian geezer.<br><br>
+
+
+                    Einstein can't be classed as witless.<br>
+                    He claimed atoms were the littlest.<br>
+                    When you did a bit of splitting-em-ness<br>
+                    Frighten everybody shitless.<br><br>
+
+                </div>
+            </div>
+        </div>
+
+    </main><!-- /.container -->
+
+    <script>
+        function takeMeHome(){
+
+            console.clear();
+
+            let articleOne       = document.getElementById("articleOneInput");
+            let articleOneValue  = articleOne.value.trim();
+            let articleTwo       = document.getElementById("articleTwoInput");
+            let articleTwoValue  = articleTwo.value.trim();
+            let articleThree       = document.getElementById("articleThreeInput");
+            let articleThreeValue  = articleThree.value.trim();
+            let articleFour       = document.getElementById("articleFourInput");
+            let articleFourValue  = articleFour.value.trim();
+
+            const resultscontainer  = document.getElementById("results-container");
+            const errorcontainer    = document.getElementById("error-container");
+            const outputcontainer   = document.getElementById("output-container");
+            outputcontainer.classList.remove("d-none"); // only show after submit.
+            const clevercontainer   = document.getElementById("ian-dury");
+            clevercontainer.classList.remove("d-block");
+            clevercontainer.classList.add("d-none");
+            
+            // resubmit.
+            resultscontainer.innerHTML = "";
+
+            let outputcss       = '<style>::-webkit-scrollbar{all:unset}::-webkit-scrollbar-thumb{background:#E0D283;border:none}::-webkit-scrollbar-thumb:hover{background:#cabd76}::-webkit-scrollbar-thumb:active{background:#d1bc46}.container_package_list div{width:100%}.resettxt{display:block!important;color:#fff!important;font-family:lato,arial,san-serif;font-size:18px!important;font-weight:500!important;font-stretch:100%!important;text-transform:none!important;letter-spacing:0!important;font-kerning:normal!important;text-align:left!important;margin:0!important;padding-left:0!important}@media (max-width: 576px){.achead{font-size:1.1rem!important}}@media (max-width: 768px){.achead{font-size:1.15rem!important}.component_primary_proposition .right{display:block!important}.partners-xs{padding-top:2rem;padding-bottom:2rem;background-color:#252E42!important}.resettxt{margin:0 0 3em!important;padding:0!important}}@media (max-width: 1281px){.achead{font-size:1.2rem!important}}@media (min-width: 1282px){.achead{font-size:1.4rem!important}}</style>';
+            let outputsection   = '<div class="field__item"><section class="component_primary_proposition"><div class="left"><h1>The UK\'s leading information resource</h1><h2>for tax & accounting, HR & compliance professionals</h2><span class="d-none d-md-block"><div class="row"><div class="col-md-6"><label class="demo"><button class="gettingstartedlink">Find Out More</button></label></div><div class="col-md-5 text-end"><a href="/about/feefo-exceptional-service-2024"><img src="https://www.croneri.co.uk/sites/default/files/inline-images/cil-hp-hero-feefo-exceptional-service-2024-98px.png" alt="Croner-i are the proud recipients of the Feefo Exceptional Service Award 2024" class="pb-xs-2"></a></div><div class="col-md-1"></div></div></span><div class="row"><div class="col"><span class="d-block d-sm-none"><a href="/about/feefo-exceptional-service-2024"><img src="https://www.croneri.co.uk/sites/default/files/inline-images/feefo-exceptional-service-2024-fc-landscape-150.jpg" alt="Croner-i are the proud recipients of the Feefo Exceptional Service Award 2024" class="pb-xs-2"></a></span><span class="d-none d-sm-block d-md-none"><a href="/about/feefo-exceptional-service-2024"><img src="https://www.croneri.co.uk/sites/default/files/inline-images/feefo-exceptional-service-2024-fc-landscape-250.png" alt="Croner-i are the proud recipients of the Feefo Exceptional Service Award 2024" class="pb-xs-2"></a></span></div></div><div class="row h-25" style="background-color:#252e42"><div class="col"><span class="d-none d-md-block text-center"><a href="/partners"><img src="https://www.croneri.co.uk/sites/default/files/inline-images/cil-hp-hero-partners-text-and-logos-698px_0.png" alt="Proudly Partnered With" class="img-fluid pt-xs-3 pt-sm-5"></a></span></div></div></div>';
+            let outputright     = '<div class="right"><div class="row mb-4"><div class="col"><p class="achead">Latest news from <a href="https://www.accountancydaily.co/" target="_blank">Accountancy Daily</a>:</p></div></div>';
+            let outputclose     = '<p>Start receiving our 7am alerts by <a href="https://www.accountancydaily.co/register-accountancy-daily-free" target="_blank">registering today</a>.</p></div><div class="d-block d-md-none"><div class="partners-xs"><div class="text-center d-block"><p style="color:#fff!important;text-transform:uppercase!important;font-size:11px;line-height:2rem;letter-spacing:.3rem">Partnered with:</p><a href="/partners"><img alt="Croner-i are Proudly Partnered With..." class="img-fluid" src="https://www.croneri.co.uk/sites/default/files/inline-images/cil-hp-hero-partners-logos-320px.png" /></a></div></div></div></section></div>';
+
+            resultscontainer.innerHTML  = outputcss + "\n" + outputsection + "\n" + outputright + "\n<!-- content -->\n" + articleOneValue + "\n<!-- Two -->\n" + articleTwoValue + "\n<!-- Three -->\n" + articleThreeValue + "\n<!-- Four -->\n" + articleFourValue + "\n<!-- // content -->\n" + outputclose + "\n";
+
+        }
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
