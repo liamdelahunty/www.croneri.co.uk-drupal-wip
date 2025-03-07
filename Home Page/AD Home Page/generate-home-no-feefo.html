@@ -218,7 +218,8 @@
                 var emailtop2 = '<style>a { color: #582775; }</style>' + "\n";
                 emailtop2 += '</head>' + "\n";
                 emailtop2 += '<body background="#ffffff" style="color: #333333; font-family: Arial, Helvetica; font-size: 14px; background-color: rgb(255, 255, 255); margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%; background:#ffffff;">' + "\n";
-                emailtop2 += '<div class="mktEditable" id="body_text" mktoname="Body Text">' + "\n";
+                emailtop2 += '<div class="mktEditable" id="body_text" mktoname="Body Text">' + "\n\n";
+                emailtop2 += '<!-- copy from here -->' + "\n\n";
                 emailtop2 += '<p style="color: #4c4d52; font-family: arial, helvetica, sans-serif;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: normal;orphans: 2;text-align: left;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: #ffffff;text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;float: none;display: inline !important;">Hi&nbsp;{{lead.First Name:default=there}},<br /><br />';
 
                 const most_read = 'We hope you are enjoying Business & Accountancy Daily. Here are the three most read stories this week:</p>' + "\n";
@@ -229,25 +230,11 @@
                 stories += '</ol>' + "\n";
 
                 var emailbottom = '<p style="font-size: 14px;">Kind regards,<br />Sara White<br />Editor,&nbsp;<a href="https://www.accountancydaily.co/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank" title="AccountancyDaily.co">Business & Accountancy Daily</a></p>' + "\n";
-                emailbottom += '<p><strong>Stay ahead. <br />Get Croner-</strong>i</p>' + "\n";
                 emailbottom += '<p style="font-size: 14px;"><a href="https://pages.croneri.co.uk/3428-register.html?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Book a demo</a> to explore the <a href="https://www.croneri.co.uk/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Croner-i</a> platform</p>' + "\n";
                 emailbottom += '<p style="font-size: 14px;">Join the conversation on <a href="https://www.linkedin.com/company/croner-i/" target="_blank" id="">LinkedIn</a></p>' + "\n";
                 emailbottom += '<p style="font-size: 12px;">Business & Accountancy Daily is a Croner-i service.</p>' + "\n";
-                emailbottom += '<p><br /></p>' + "\n";
-
-                emailbottom += '<p style="font-size: 14px;">Kind regards,<br />Sara White<br />Editor,&nbsp;<a href="https://www.accountancydaily.co/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank" title="AccountancyDaily.co">Business & Accountancy Daily</a></p>' + "\n";
-                emailbottom += '<p style="font-size: 14px;"><a href="https://pages.croneri.co.uk/3428-register.html?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Book a demo</a> to explore the <a href="https://www.croneri.co.uk/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Croner-i</a> platform</p>' + "\n";
-                emailbottom += '<p><strong>Inform - Advise - Protect</p>' + "\n";
-                emailbottom += '<p style="font-size: 14px;">Join the conversation on <a href="https://www.linkedin.com/company/croner-i/" target="_blank" id="">LinkedIn</a></p>' + "\n";
-                emailbottom += '<p style="font-size: 12px;">Business & Accountancy Daily is a Croner-i service.</p>' + "\n";
-                emailbottom += '<p><br /></p>' + "\n";
-
-                emailbottom += '<p style="font-size: 14px;">Kind regards,<br />Sara White<br />Editor,&nbsp;<a href="https://www.accountancydaily.co/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank" title="AccountancyDaily.co">Business & Accountancy Daily</a></p>' + "\n";
-                emailbottom += '<p style="font-size: 14px;"><a href="https://pages.croneri.co.uk/3428-register.html?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Book a demo</a> to explore the <a href="https://www.croneri.co.uk/?utm_campaign=3428&amp;utm_medium=email&amp;utm_source=marketing&amp;utm_content=accountancy-daily-nurture-program-email-1-link" target="_blank">Croner-i</a> platform</p>' + "\n";
-                emailbottom += '<p style="font-size: 14px;">Join the conversation on <a href="https://www.linkedin.com/company/croner-i/" target="_blank" id="">LinkedIn</a></p>' + "\n";
-                emailbottom += '<p style="font-size: 12px;">Business & Accountancy Daily is a Croner-i service.</p>' + "\n";
-                emailbottom += '<p><br /></p>' + "\n";
-
+                emailbottom += '<p><br /></p>' + "\n\n";
+                emailbottom += '<!-- copy to here -->' + "\n\n";
                 emailbottom += '</div>' + "\n";
                 emailbottom += '<p style="padding: 0 0 12px 0;"><a href="https://www.croneri.co.uk/" target="_blank"><img src="https://pages.croner.co.uk/rs/463-YBC-525/images/2022-Croner-i-logo-Full-colour_190x47.png" alt="logo-footer" border="0" /></a></p>' + "\n";
                 emailbottom += '<p>If you would like to unsubscribe, <a href="{{system.unsubscribeLink}}">please click here</a>.</p>' + "\n";
