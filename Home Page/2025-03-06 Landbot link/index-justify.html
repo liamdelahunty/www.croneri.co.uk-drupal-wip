@@ -1,6 +1,4 @@
-<style type="text/css">
-	twb{text-wrap:balance}
-	/* for the three packages to display full width properly */
+<style type="text/css">/* for the three packages to display full width properly */
 	.container_package_list div{width:100%;}
 
 	.gettingstartedlink:hover {
@@ -11,14 +9,21 @@
 
 	.btn-get-a-quote {
 		color: #e1d283 !important;
-		border-color: #35538B !important;
 		background-color: #35538B !important;
+		border-color: #35538B !important;
+		border-width: 0;
+		padding-bottom: 0.9em;
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-top: 0.7em;
+		margin: 0;
+		line-height: normal;
 	}
 
 	.btn-get-a-quote:hover {
-		color: #1a2233 !important;
-		background-color: transparent !important;
-		border-color: #35538B !important;
+		color: #35538B !important;
+		background-color: #e1d283 !important;
+		border-color: #e1d283 !important;
 	}
 
 	.btn-get-a-quote:focus, .btn-get-a-quote.focus {
@@ -42,28 +47,47 @@
 		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5) !important;
 	}
 
+	/*
+	<576px	XS
+	≥576px	sm
+	≥768px	md
+	≥992px	lg
+	≥1200px Extra large
+	*/
+
+	@media (min-width: 768px) { 
+		.btn-get-a-quote, .gettingstartedlink{
+			width: 100% !important;
+		}
+	}
+	@media (min-width: 1800px) { 
+		.btn-get-a-quote, .gettingstartedlink{
+			width: 400px !important;
+		}
+	}
+
 </style>
 <div class="field__item">
 	<section class="component_primary_proposition">
 		<div class="left">
 			<h1>The UK's most trusted knowledge resource</h1>
 			<!-- <h2 class="twb">Supporting professionals in tax & accounting, HR and key industries including safety, environment, care, trade and transport</h2> -->
-			<h2 class="twb">for tax & accounting, HR & compliance professionals</h2>
+			<h2>designed for tax & accounting, HR & compliance professionals</h2>
 			<div class="row">
 				<div class="col">
-					<div class="d-none d-md-block">
+					<div class="d-none d-xl-block mt-3">
 						<div style="display:flex; align-items:center; justify-content:space-around;">
-							<div style="margin-left: 0.5rem;margin-right: 0.5rem;"><button class="gettingstartedlink">Book a free consultation</button></div>
-							<div style="margin-left: 0.5rem;margin-right: 0.5rem;">
+							<div style="margin-left: 1em;margin-right: 1em;"><button class="gettingstartedlink rounded">Book a free consultation</button></div>
+							<div style="margin-left: 1em;margin-right: 1em;">
 								<a href="https://www.croneri.co.uk/request-quote">
 									<button class="btn btn-get-a-quote">Get a quote online</button>
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="d-block d-md-none">
-						<button class="w-100 gettingstartedlink">Book a free consultation</button>
-						<a href="https://www.croneri.co.uk/request-quote"><button class="btn btn-get-a-quote w-100 mt-2">Get a quote online</button></a>
+					<div class="d-block d-xl-none">
+						<button class="gettingstartedlink rounded w-100">Book a free consultation</button>
+						<a href="https://www.croneri.co.uk/request-quote"><button class="btn btn-get-a-quote w-100 mt-2 rounded">Get a quote online</button></a>
 					</div>
 				</div>
 			</div>
@@ -81,4 +105,3 @@
 		</div>
 	</section>
 </div>
-
