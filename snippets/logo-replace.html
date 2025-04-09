@@ -1,0 +1,20 @@
+<style>
+.logo img {
+  transition: opacity 1s ease-in-out;
+}
+.logo img.fade-out {
+  opacity: 0;
+}
+</style>
+<script>
+!(function () {
+  var logo = document.querySelector('.logo img');
+  if (logo) {
+    logo.classList.add('fade-out');
+    logo.addEventListener('transitionend', function() {
+      logo.src = 'https://pages.croner.co.uk/rs/463-YBC-525/images/croner-i-powered-by-ai-default.svg';
+      logo.classList.remove('fade-out');
+    });
+  }
+})();
+</script>

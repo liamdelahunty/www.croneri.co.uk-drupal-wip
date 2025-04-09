@@ -1,11 +1,17 @@
-<style type="text/css">::-webkit-scrollbar-thumb{background:#e0d283}
+<style type="text/css">
 
 	.container_package_list div{
 		width:100%;
 		/* for the three packages to display full width properly */
 	} 
 
-	.gettingstartedlink:hover {
+	.btn-gettingstarted {
+		color: #35538B !important;
+		background-color: #e1d283 !important;
+		border-color: #e1d283 !important;
+	}
+
+	.btn-gettingstarted:hover {
 		color: #e1d283 !important;
 		background-color: #1a2233 !important;
 		border-color: #1a2233 !important;
@@ -64,6 +70,13 @@
 			width: 100% !important;
 		}
 	}
+
+	@media (min-width: 1200px) and (max-width: 1799px){ 
+		.btn-get-a-quote, .gettingstartedlink{
+			width: 350px !important;
+		}
+	}
+
 	@media (min-width: 1800px) { 
 		.btn-get-a-quote, .gettingstartedlink{
 			width: 400px !important;
@@ -76,21 +89,17 @@
 		<div class="left">
 			<h1>The UK's most trusted knowledge resource</h1>
 			<!-- <h2 class="twb">Supporting professionals in tax & accounting, HR and key industries including safety, environment, care, trade and transport</h2> -->
-			<h2>for tax & accounting, HR & compliance professionals. Created by experts, powered by Ai</h2>
+			<h2>designed for tax & accounting, HR & compliance professionals</h2>
 			<div class="row">
 				<div class="col">
 					<div class="d-none d-xl-block mt-3">
-						<div style="display:flex; align-items:center; justify-content:space-around;">
-							<div style="margin-left: 1em;margin-right: 1em;"><button class="gettingstartedlink rounded">Book a free consultation</button></div>
-							<div style="margin-left: 1em;margin-right: 1em;">
-								<a href="https://www.croneri.co.uk/request-quote">
-									<button class="btn btn-get-a-quote">Get a quote online</button>
-								</a>
-							</div>
+						<div style="display:flex; justify-content:center; gap: 20px; margin-left:1rem;">
+							<div style="width:306px;"><button class="btn btn-gettingstarted rounded" style="width:306px;">Book a free consultation</button></div>
+							<div style="width:306px;"><a href="https://www.croneri.co.uk/request-quote"><button class="btn btn-get-a-quote" style="width:306px;">Get a quote online</button></a></div>
 						</div>
 					</div>
-					<div class="d-block d-xl-none">
-						<button class="gettingstartedlink rounded w-100">Book a free consultation</button>
+					<div class="d-block d-xl-none" style="margin-left:1rem; background-color: #00ff99;">
+						<button class="btn btn-gettingstarted w-100 rounded">Book a free consultation</button>
 						<a href="https://www.croneri.co.uk/request-quote"><button class="btn btn-get-a-quote w-100 mt-2 rounded">Get a quote online</button></a>
 					</div>
 				</div>
